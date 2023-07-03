@@ -3,33 +3,62 @@
 <head>
   <title>Photo Tour Carmelo</title>
   <style> 
-   body {
-      background-color: #b1fff8; /* Cambia el color de fondo aquí */
-      font-size: 20px; /* Ajusta el tamaño de la fuente de la página aquí */
-}
+    body {
+      background-color: #b1fff8;
+      font-size: 20px;
+      text-align: center;
+    }
+
     .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      font-family: Didot;
-      font-size: 20px; /* 15 */}
-      h1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px; /* Ajusta el espacio entre las columnas */
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
       font-family: "Didot";
       text-align: center; /* Centra el título */
+    
     }
+
     .place {
-      width: 1200px;
-      margin-bottom: 105px;
-      border: 8px solid hsl(0, 0%, 0%);
-      padding: 80px;
+      width: 100%;
+      padding: 20px;
       text-align: center;
-      font-family: Didot;
-      font-size: 20px; /* 15 */}
+      background-color: #cbf6f6;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .place img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    h2 {
+      font-family: "Didot", serif;
+      font-size: 24px;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #000000;
+      line-height: 1.4;
+    }
+    
+    /* Agrega estilo para la separación entre las columnas */
+    @media (min-width: 768px) {
+      .container {
+        grid-gap: 40px;
+      }
+    }
   </style>
 </head>
-</title>
 <body>
-  <h1>Photo Tour Carmelo</h1>
+    <h1>Photo Tour Carmelo</h1>
   <p>Bienvenido a Photo Tour Carmelo, donde ofrecemos un servicio de fotografía excepcional para turistas. Contamos con dos emocionantes paquetes diseñados para satisfacer tus necesidades y capturar recuerdos inolvidables.
 
     Nuestro primer paquete te brinda la oportunidad de unirte a nuestro tour preestablecido, donde nuestros talentosos fotógrafos capturarán momentos especiales durante tu experiencia. Además, ofrecemos dos opciones de entrega: fotografías digitales o impresiones en papel, cada una con un costo diferente, para que elijas la forma en que deseas preservar tus recuerdos.
@@ -49,13 +78,12 @@
     <h2>Lugares en Carmelo</h2>
   <p>La ciudad de Carmelo, ubicada en el departamento de Colonia, Uruguay, es un lugar lleno de encanto y rica historia. Entre sus destacados lugares se encuentran el Puente Castells y el Puente Giratorio, dos estructuras emblemáticas que representan la conexión de la ciudad con el agua y su importancia como puerto fluvial. La Calera de las Huérfanas, una antigua cantera de piedra caliza, cuenta historias de trabajadores y ofrece a los visitantes la oportunidad de explorar formaciones rocosas únicas en medio de un entorno natural impresionante.
     La Posada de Campo Tinto, rodeada de campos de viñedos, invita a los huéspedes a disfrutar de una experiencia rural tranquila y auténtica. Las plazas Independencia y Artigas son lugares emblemáticos que honran la historia y la cultura de Uruguay, mientras que la Playa Seré ofrece un refugio de tranquilidad y diversión a orillas del Río de la Plata. Estos lugares, cada uno con su encanto distintivo, hacen de Carmelo un destino único y atractivo para residentes y turistas por igual.
-</div>
-  
-  </p>
+
+    </p>
   <div class="container">
     <div class="place">
       <h2>Puente Castells</h2>
-      <img src="https://live.staticflickr.com/889/40386101064_4ae836e0ca_b.jpg" alt="Puente Castells">
+      <img src="https://i.pinimg.com/736x/0e/61/2a/0e612a52ed3b79bd22cfb71afe772b85--perdido-uruguay.jpg" alt="Puente Castells">
       <p>Historia: 
         El Puente Castells es una estructura icónica ubicada en la ciudad de Carmelo, en el departamento de Colonia, Uruguay. Fue construido a principios del siglo XX y lleva el nombre de su diseñador, el ingeniero español Alberto Castells. Este puente cruza el arroyo Las Vacas y conecta la ciudad con la isla del mismo nombre.
 
@@ -255,3 +283,4 @@ cosas y la belleza del paisaje circundante atraen a visitantes que desean explor
   </div>
 </body>
 </html>
+
